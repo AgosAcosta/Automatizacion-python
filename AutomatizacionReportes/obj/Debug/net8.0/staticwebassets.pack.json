@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Automatizacion Python\\AutomatizacionReportes\\AutomatizacionReportes\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AutomatizacionReportes.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AutomatizacionReportes.props",
+      "PackagePath": "build\\AutomatizacionReportes.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AutomatizacionReportes.props",
+      "PackagePath": "buildMultiTargeting\\AutomatizacionReportes.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AutomatizacionReportes.props",
+      "PackagePath": "buildTransitive\\AutomatizacionReportes.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

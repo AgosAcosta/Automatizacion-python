@@ -1,0 +1,81 @@
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.csproj.AssemblyReference.cache
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.GeneratedMSBuildEditorConfig.editorconfig
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.AssemblyInfoInputs.cache
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.AssemblyInfo.cs
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.csproj.CoreCompileInputs.cache
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.MvcApplicationPartsAssemblyInfo.cs
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.MvcApplicationPartsAssemblyInfo.cache
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\appsettings.Development.json
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\appsettings.json
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\AutomatizacionReportes.exe
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\AutomatizacionReportes.deps.json
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\AutomatizacionReportes.runtimeconfig.json
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\AutomatizacionReportes.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\AutomatizacionReportes.pdb
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\ClosedXML.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\ClosedXML.Parser.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\ExcelNumberFormat.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\RBush.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\SixLabors.Fonts.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\System.IO.Packaging.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets.build.json
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets.development.json
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets\msbuild.AutomatizacionReportes.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets\msbuild.build.AutomatizacionReportes.props
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AutomatizacionReportes.props
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AutomatizacionReportes.props
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets.pack.json
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\scopedcss\bundle\AutomatizacionReportes.styles.css
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\Automati.8ADA0B80.Up2Date
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\refint\AutomatizacionReportes.dll
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.pdb
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.genruntimeconfig.cache
+E:\Automatizacion Python\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\ref\AutomatizacionReportes.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\appsettings.Development.json
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\appsettings.json
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\AutomatizacionReportes.staticwebassets.runtime.json
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\AutomatizacionReportes.exe
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\AutomatizacionReportes.deps.json
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\AutomatizacionReportes.runtimeconfig.json
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\AutomatizacionReportes.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\AutomatizacionReportes.pdb
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\ClosedXML.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\ClosedXML.Parser.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\ExcelNumberFormat.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\RBush.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\SixLabors.Fonts.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\bin\Debug\net8.0\System.IO.Packaging.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.csproj.AssemblyReference.cache
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.GeneratedMSBuildEditorConfig.editorconfig
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.AssemblyInfoInputs.cache
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.AssemblyInfo.cs
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.csproj.CoreCompileInputs.cache
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.MvcApplicationPartsAssemblyInfo.cs
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.MvcApplicationPartsAssemblyInfo.cache
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets.build.json
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets.development.json
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets\msbuild.AutomatizacionReportes.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets\msbuild.build.AutomatizacionReportes.props
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AutomatizacionReportes.props
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AutomatizacionReportes.props
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\staticwebassets.pack.json
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\scopedcss\bundle\AutomatizacionReportes.styles.css
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\Automati.8ADA0B80.Up2Date
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\refint\AutomatizacionReportes.dll
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.pdb
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\AutomatizacionReportes.genruntimeconfig.cache
+E:\Automatizacion Python\AutomatizacionReportes\AutomatizacionReportes\obj\Debug\net8.0\ref\AutomatizacionReportes.dll

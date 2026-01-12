@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "BAVzWZI3iXp6n6xX75zW/tj7HXPSBRXNGBXDCoDiSdA=",
+  "Source": "AutomatizacionReportes",
+  "BasePath": "_content/AutomatizacionReportes",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AutomatizacionReportes\\wwwroot",
+      "Source": "AutomatizacionReportes",
+      "ContentRoot": "E:\\Automatizacion Python\\AutomatizacionReportes\\AutomatizacionReportes\\wwwroot\\",
+      "BasePath": "_content/AutomatizacionReportes",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Automatizacion Python\\AutomatizacionReportes\\AutomatizacionReportes\\wwwroot\\index.html",
+      "SourceId": "AutomatizacionReportes",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Automatizacion Python\\AutomatizacionReportes\\AutomatizacionReportes\\wwwroot\\",
+      "BasePath": "_content/AutomatizacionReportes",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
