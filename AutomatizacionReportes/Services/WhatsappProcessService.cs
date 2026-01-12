@@ -20,14 +20,9 @@ namespace AutomatizacionReportes.Services
 
         public async Task<ProcessResult> EjecutarAsync()
         {
-            // 1. Buscar archivos
             var archivos = _scanner.ObtenerArchivosWhatsapp();
-
-            // 2. Procesar archivos
             var resultados = _processor.Procesar(archivos);
-
-            // 3. Generar Excel (pisar)
-            var archivoSalida = _writer.GenerarExcelWhatsapp(resultados);
+            var archivoSalida = _writer.GenerarExcelWhatsappHistorico(resultados);
 
             return new ProcessResult
             {

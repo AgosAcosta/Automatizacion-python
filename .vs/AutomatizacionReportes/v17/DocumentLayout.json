@@ -1,12 +1,170 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Automatizacion Python\\AutomatizacionReportes\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|c:\\users\\user\\downloads\\automatizador\\automatizacion-python\\automatizacionreportes\\services\\whatsappprocessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|solutionrelative:automatizacionreportes\\services\\whatsappprocessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|c:\\users\\user\\downloads\\automatizador\\automatizacion-python\\automatizacionreportes\\controllers\\whatsappcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|solutionrelative:automatizacionreportes\\controllers\\whatsappcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|c:\\users\\user\\downloads\\automatizador\\automatizacion-python\\automatizacionreportes\\models\\whatsappresultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|solutionrelative:automatizacionreportes\\models\\whatsappresultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|c:\\users\\user\\downloads\\automatizador\\automatizacion-python\\automatizacionreportes\\services\\excelwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|solutionrelative:automatizacionreportes\\services\\excelwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|c:\\users\\user\\downloads\\automatizador\\automatizacion-python\\automatizacionreportes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|solutionrelative:automatizacionreportes\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|c:\\users\\user\\downloads\\automatizador\\automatizacion-python\\automatizacionreportes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|solutionrelative:automatizacionreportes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|c:\\users\\user\\downloads\\automatizador\\automatizacion-python\\automatizacionreportes\\services\\whatsappprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|solutionrelative:automatizacionreportes\\services\\whatsappprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|c:\\users\\user\\downloads\\automatizador\\automatizacion-python\\automatizacionreportes\\services\\filescanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|solutionrelative:automatizacionreportes\\services\\filescanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|c:\\users\\user\\downloads\\automatizador\\automatizacion-python\\automatizacionreportes\\services\\executionlockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09067107-EBB8-4432-B9D1-D91F8454A9C3}|AutomatizacionReportes\\AutomatizacionReportes.csproj|solutionrelative:automatizacionreportes\\services\\executionlockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\appsettings.json",
+              "RelativeDocumentMoniker": "AutomatizacionReportes\\appsettings.json",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\appsettings.json",
+              "RelativeToolTip": "AutomatizacionReportes\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-12T16:19:15.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FileScanner.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Services\\FileScanner.cs",
+              "RelativeDocumentMoniker": "AutomatizacionReportes\\Services\\FileScanner.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Services\\FileScanner.cs",
+              "RelativeToolTip": "AutomatizacionReportes\\Services\\FileScanner.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T15:31:53.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExcelWriter.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Services\\ExcelWriter.cs",
+              "RelativeDocumentMoniker": "AutomatizacionReportes\\Services\\ExcelWriter.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Services\\ExcelWriter.cs",
+              "RelativeToolTip": "AutomatizacionReportes\\Services\\ExcelWriter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T15:31:46.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WhatsappResultado.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Models\\WhatsappResultado.cs",
+              "RelativeDocumentMoniker": "AutomatizacionReportes\\Models\\WhatsappResultado.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Models\\WhatsappResultado.cs",
+              "RelativeToolTip": "AutomatizacionReportes\\Models\\WhatsappResultado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T15:29:27.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WhatsappController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Controllers\\WhatsappController.cs",
+              "RelativeDocumentMoniker": "AutomatizacionReportes\\Controllers\\WhatsappController.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Controllers\\WhatsappController.cs",
+              "RelativeToolTip": "AutomatizacionReportes\\Controllers\\WhatsappController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T15:32:51.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WhatsappProcessService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Services\\WhatsappProcessService.cs",
+              "RelativeDocumentMoniker": "AutomatizacionReportes\\Services\\WhatsappProcessService.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Services\\WhatsappProcessService.cs",
+              "RelativeToolTip": "AutomatizacionReportes\\Services\\WhatsappProcessService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T15:32:09.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WhatsappProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Services\\WhatsappProcessor.cs",
+              "RelativeDocumentMoniker": "AutomatizacionReportes\\Services\\WhatsappProcessor.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Services\\WhatsappProcessor.cs",
+              "RelativeToolTip": "AutomatizacionReportes\\Services\\WhatsappProcessor.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T15:31:57.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Program.cs",
+              "RelativeDocumentMoniker": "AutomatizacionReportes\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Program.cs",
+              "RelativeToolTip": "AutomatizacionReportes\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T16:19:12.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ExecutionLockService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Services\\ExecutionLockService.cs",
+              "RelativeDocumentMoniker": "AutomatizacionReportes\\Services\\ExecutionLockService.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\Automatizador\\Automatizacion-python\\AutomatizacionReportes\\Services\\ExecutionLockService.cs",
+              "RelativeToolTip": "AutomatizacionReportes\\Services\\ExecutionLockService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T15:31:50.701Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
