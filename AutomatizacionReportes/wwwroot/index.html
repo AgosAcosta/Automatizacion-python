@@ -5,180 +5,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automatización de Reportes</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+         * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+         }
 
-        :root {
-            --blue-main: #1E40AF;
-            --blue-soft: #E0E7FF;
-            --green-main: #22C55E;
-            --green-dark: #15803D;
-            --gray-bg: #F8FAFC;
-            --gray-card: #FFFFFF;
-            --gray-border: #E5E7EB;
-            --text-main: #0F172A;
-            --text-muted: #64748B;
-        }
+         :root {
+             --blue-main: #1E40AF;
+             --blue-soft: #E0E7FF;
+             /* Verde estilo Modo */
+             --green-main: #0A8F5B;
+             --green-dark: #087A4E;
+             --gray-bg: #F8FAFC;
+             --gray-card: #FFFFFF;
+             --gray-border: #E5E7EB;
+             --text-main: #0F172A;
+             --text-muted: #64748B;
+         }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: var(--gray-bg);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+         body {
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             background: var(--gray-bg);
+             min-height: 100vh;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             padding: 20px;
+         }
 
-        .container {
-            background: var(--gray-card);
-            border-radius: 14px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
-            padding: 40px;
-            max-width: 600px;
-            width: 100%;
-            border: 1px solid var(--gray-border);
-        }
+         .container {
+             background: var(--gray-card);
+             border-radius: 14px;
+             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+             padding: 40px;
+             max-width: 600px;
+             width: 100%;
+             border: 1px solid var(--gray-border);
+         }
 
-        h1 {
-            text-align: center;
-            color: var(--text-main);
-            margin-bottom: 10px;
-            font-size: 2em;
-        }
+         h1 {
+             text-align: center;
+             color: var(--text-main);
+             margin-bottom: 10px;
+             font-size: 2em;
+         }
 
-        .subtitle {
-            text-align: center;
-            color: var(--text-muted);
-            margin-bottom: 40px;
-            font-size: 0.95em;
-        }
+         .subtitle {
+             text-align: center;
+             color: var(--text-muted);
+             margin-bottom: 40px;
+             font-size: 0.95em;
+         }
 
-        .buttons-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
+         .buttons-grid {
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             gap: 20px;
+             margin-bottom: 20px;
+         }
 
-        .btn {
-            padding: 20px;
-            border: none;
-            border-radius: 12px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.25s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            min-height: 120px;
-            justify-content: center;
-            text-align: center;
-        }
+         /* =======================
+        BOTONES (UNIFICADOS)
+        ======================= */
+         .btn {
+             padding: 20px;
+             border-radius: 12px;
+             font-size: 16px;
+             font-weight: 600;
+             cursor: pointer;
+             transition: all 0.25s ease;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+             gap: 8px;
+             min-height: 120px;
+             text-align: center;
+             background: #F3F4F6; /* gris neutro */
+             color: var(--text-main);
+             border: 1px solid var(--gray-border);
+         }
 
-        /* Acción principal - WhatsApp */
-        .btn-whatsapp {
-            background: var(--green-main);
-            color: white;
-        }
+             /* Hover (todos los habilitados) */
+             .btn:hover:not(:disabled) {
+                 background: #ECFDF5; /* verde MUY suave */
+                 border-color: var(--green-main);
+                 transform: translateY(-2px);
+             }
 
-            .btn-whatsapp:hover {
-                background: var(--green-dark);
-                transform: translateY(-2px);
-                box-shadow: 0 10px 25px rgba(34, 197, 94, 0.35);
-            }
+             /* Botón en ejecución */
+             .btn.loading {
+                 background: var(--green-main);
+                 color: #FFFFFF;
+                 border-color: var(--green-main);
+                 cursor: default;
+                 transform: none;
+             }
 
-            .btn-whatsapp:active {
-                transform: translateY(0);
-            }
+             /* Disabled real */
+             .btn:disabled {
+                 background: #E5E7EB;
+                 color: #9CA3AF;
+                 cursor: not-allowed;
+                 box-shadow: none;
+                 transform: none;
+             }
 
-        /* Botones bloqueados */
-        .btn:disabled {
-            background: var(--blue-soft);
-            color: var(--blue-main);
-            cursor: not-allowed;
-            box-shadow: none;
-        }
+         .icon {
+             font-size: 30px;
+         }
 
-        .icon {
-            font-size: 30px;
-        }
+         .label {
+             font-size: 14px;
+         }
 
-        .label {
-            font-size: 14px;
-        }
+         /* =======================
+        ESTADOS
+        ======================= */
+         .status {
+             text-align: center;
+             margin-top: 20px;
+             padding: 14px;
+             border-radius: 8px;
+             font-size: 14px;
+             display: none;
+         }
 
-        .status {
-            text-align: center;
-            margin-top: 20px;
-            padding: 14px;
-            border-radius: 8px;
-            font-size: 14px;
-            display: none;
-        }
+             .status.show {
+                 display: block;
+             }
 
-            .status.show {
-                display: block;
-            }
+             .status.success {
+                 background-color: #ECFDF5;
+                 color: #065F46;
+                 border: 1px solid #A7F3D0;
+             }
 
-            .status.success {
-                background-color: #ECFDF5;
-                color: #065F46;
-                border: 1px solid #A7F3D0;
-            }
+             .status.error {
+                 background-color: #FEF2F2;
+                 color: #991B1B;
+                 border: 1px solid #FECACA;
+                 position: relative;
+                 padding-right: 32px;
+             }
 
-            .status.error {
-                background-color: #FEF2F2;
-                color: #991B1B;
-                border: 1px solid #FECACA;
-                position: relative;
-                padding-right: 32px;
-            }
+                 .status.error::after {
+                     content: "✖";
+                     position: absolute;
+                     top: 10px;
+                     right: 10px;
+                     cursor: pointer;
+                     opacity: 0.6;
+                 }
 
-                .status.error::after {
-                    content: "✖";
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                    cursor: pointer;
-                    opacity: 0.6;
-                }
+             .status.loading {
+                 background-color: #EFF6FF;
+                 color: #1E40AF;
+                 border: 1px solid #BFDBFE;
+             }
 
-            .status.loading {
-                background-color: #EFF6FF;
-                color: #1E40AF;
-                border: 1px solid #BFDBFE;
-            }
+         /* =======================
+        SPINNER
+        ======================= */
+         .spinner {
+             display: inline-block;
+             width: 14px;
+             height: 14px;
+             border: 2px solid rgba(0, 0, 0, 0.1);
+             border-radius: 50%;
+             border-top-color: currentColor;
+             animation: spin 0.6s linear infinite;
+             margin-right: 8px;
+         }
 
-        .spinner {
-            display: inline-block;
-            width: 14px;
-            height: 14px;
-            border: 2px solid rgba(0, 0, 0, 0.1);
-            border-radius: 50%;
-            border-top-color: currentColor;
-            animation: spin 0.6s linear infinite;
-            margin-right: 8px;
-        }
+         @keyframes spin {
+             to {
+                 transform: rotate(360deg);
+             }
+         }
 
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 12px;
-            color: var(--text-muted);
-        }
+         .footer {
+             text-align: center;
+             margin-top: 30px;
+             font-size: 12px;
+             color: var(--text-muted);
+         }
     </style>
+
 
 
 
@@ -190,21 +204,24 @@
         <p class="subtitle">Generación de reportes de Whatsapp, SMS, Mail, Asignación</p>
 
         <div class="buttons-grid">
-            <button class="btn btn-whatsapp" onclick="ejecutarAccion('whatsapp')">
+            <button class="btn btn-whatsapp" data-tipo="whatsapp">
                 <span class="icon">💬</span>
                 <span class="label">WhatsApp</span>
             </button>
-            <button class="btn btn-email" disabled>
-                <span class="icon">🔒</span>
-                <span class="label">Próximamente</span>
+
+            <button class="btn btn-sms" data-tipo="sms">
+                <span class="icon">📩</span>
+                <span class="label">SMS</span>
             </button>
-            <button class="btn btn-sms" disabled>
-                <span class="icon">🔒</span>
-                <span class="label">Próximamente</span>
+
+            <button class="btn btn-email" data-tipo="mail">
+                <span class="icon">✉️</span>
+                <span class="label">Mail</span>
             </button>
-            <button class="btn btn-reports" disabled>
-                <span class="icon">🔒</span>
-                <span class="label">Próximamente</span>
+
+            <button class="btn btn-reports" data-tipo="mailAsignacion">
+                <span class="icon">📄</span>
+                <span class="label">Mail Asignación</span>
             </button>
         </div>
 
@@ -217,57 +234,86 @@
 
     <script>
         const statusDiv = document.getElementById('status');
-        const whatsappBtn = document.querySelector('.btn-whatsapp');
+        const buttons = document.querySelectorAll('.btn[data-tipo]');
 
+        const ENDPOINTS = {
+            whatsapp: '/api/procesos/whatsapp/ejecutar',
+            sms: '/api/procesos/sms/ejecutar',
+            mail: '/api/procesos/mail/ejecutar',
+            mailAsignacion: '/api/procesos/mail-asignacion/ejecutar'
+        };
+
+        const LABELS = {
+            whatsapp: 'WhatsApp',
+            sms: 'SMS',
+            mail: 'Mail',
+            mailAsignacion: 'Mail Asignación'
+        };
+
+        // Bind de botones
+        buttons.forEach(btn => {
+            btn.onclick = () => ejecutarAccion(btn.dataset.tipo);
+        });
 
         async function ejecutarAccion(tipo) {
-            if (tipo !== 'whatsapp') {
-                mostrarEstado('Este endpoint aún no está definido', 'error');
+            const endpoint = ENDPOINTS[tipo];
+            const label = LABELS[tipo];
+
+            if (!endpoint) {
+                mostrarEstado(`❌ ${label}: endpoint no definido`, 'error');
                 return;
             }
 
             try {
-                mostrarEstado('<span class="spinner"></span> Ejecutando WhatsApp...', 'loading');
+                mostrarEstado(`<span class="spinner"></span> Ejecutando ${label}...`, 'loading');
 
-                const response = await fetch('/api/procesos/whatsapp/ejecutar', {
+                // 🔑 PASAR EL TIPO ACTIVO
+                bloquearBotones(true, tipo);
+
+                const response = await fetch(endpoint, {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
+                    headers: { 'Content-Type': 'application/json' }
                 });
 
-                if (response.ok) {
-                    const data = await response.json();
-                    mostrarEstado('✅ WhatsApp ejecutado exitosamente', 'success');
-                } else if (response.status === 409) {
-                    const data = await response.json();
-                    mostrarEstado(`⚠️ ${data.message || 'Proceso ya en ejecución'}`, 'error');
-                } else {
-                    const data = await response.json();
-                    mostrarEstado(`❌ Error: ${data.message || 'Error desconocido'}`, 'error');
+                let data = {};
+                try {
+                    data = await response.json();
+                } catch {
+                    data.message = 'Respuesta inválida del servidor';
                 }
+
+                if (response.ok) {
+                    mostrarEstado(`✅ ${label} ejecutado correctamente`, 'success');
+                } else {
+                    mostrarEstado(`❌ ${data.message || 'Error desconocido'}`, 'error');
+                }
+
             } catch (error) {
                 mostrarEstado(`❌ Error de conexión: ${error.message}`, 'error');
+            } finally {
+                bloquearBotones(false);
             }
+        }
+
+        function bloquearBotones(bloquear, activoTipo) {
+            buttons.forEach(btn => {
+                btn.disabled = bloquear;
+                btn.classList.toggle(
+                    'loading',
+                    bloquear && btn.dataset.tipo === activoTipo
+                );
+            });
         }
 
         function mostrarEstado(mensaje, tipo) {
             statusDiv.innerHTML = mensaje;
             statusDiv.className = `status show ${tipo}`;
 
-            // Limpiar cualquier timeout anterior
             if (statusDiv.hideTimeout) {
                 clearTimeout(statusDiv.hideTimeout);
                 statusDiv.hideTimeout = null;
             }
 
-            if (tipo === 'loading') {
-                whatsappBtn.disabled = true;
-            } else {
-                whatsappBtn.disabled = false;
-            }
-
-            // Solo success se oculta automáticamente
             if (tipo === 'success') {
                 statusDiv.hideTimeout = setTimeout(() => {
                     statusDiv.classList.remove('show');
@@ -280,8 +326,7 @@
                 statusDiv.classList.remove('show');
             }
         };
-
-
     </script>
+
 </body>
 </html>
