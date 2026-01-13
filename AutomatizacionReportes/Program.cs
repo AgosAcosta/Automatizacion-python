@@ -1,4 +1,7 @@
+using AutomatizacionReportes.Infrastructure;
+using AutomatizacionReportes.Processors;
 using AutomatizacionReportes.Services;
+using AutomatizacionReportes.Writers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,10 +14,24 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<ExecutionLockService>();
 builder.Services.AddScoped<WhatsappProcessService>();
+builder.Services.AddScoped<SmsProcessService>();
 
 builder.Services.AddScoped<FileScanner>();
 builder.Services.AddScoped<WhatsappProcessor>();
-builder.Services.AddScoped<ExcelWriter>();
+builder.Services.AddScoped<ExcelWriterWhatsapp>();
+
+builder.Services.AddScoped<SmsProcessor>();
+builder.Services.AddScoped<ExcelWriterSms>();
+
+builder.Services.AddScoped<MailProcessService>();
+builder.Services.AddScoped<MailProcessor>();
+builder.Services.AddScoped<ExcelWriterMail>();
+
+builder.Services.AddScoped<MailAsignacionProcessService>();
+builder.Services.AddScoped<MailAsignacionProcessor>();
+builder.Services.AddScoped<ExcelWriterMailAsignacion>();
+
+
 
 var app = builder.Build();
 
