@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutomatizacionReportes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4f49a0b90024a2d0b181d428ee017b552c9d5ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+039b8118fdffcddd80cf668e8ce3b0e5b67ae6c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutomatizacionReportes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutomatizacionReportes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

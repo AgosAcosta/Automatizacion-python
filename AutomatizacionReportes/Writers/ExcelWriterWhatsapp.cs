@@ -1,14 +1,14 @@
 ﻿using AutomatizacionReportes.Models;
 using ClosedXML.Excel;
 
-namespace AutomatizacionReportes.Services
+namespace AutomatizacionReportes.Writers
 {
 
-    public class ExcelWriter
+    public class ExcelWriterWhatsapp
     {
         private readonly string _outputPath;
 
-        public ExcelWriter(IConfiguration config)
+        public ExcelWriterWhatsapp(IConfiguration config)
         {
             _outputPath = config["OutputPaths:Whatsapp"]
                 ?? throw new Exception("No está configurado la ruta de salida");
