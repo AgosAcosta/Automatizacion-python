@@ -1,4 +1,4 @@
-﻿namespace AutomatizacionReportes.Services
+﻿namespace AutomatizacionReportes.Infrastructure
 {
     //Sirve para pisar los archivos cuando se ejecuta la tarea + ejecucion manual 
     public class ExecutionLockService
@@ -17,7 +17,6 @@
                 return true;
             }
         }
-
         public void End()
         {
             lock (_lock)

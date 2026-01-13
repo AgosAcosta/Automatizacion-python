@@ -5,16 +5,16 @@ using AutomatizacionReportes.Writers;
 
 namespace AutomatizacionReportes.Services
 {
-    public class WhatsappProcessService
+    public class SmsProcessService
     {
         private readonly FileScanner _scanner;
-        private readonly WhatsappProcessor _processor;
-        private readonly ExcelWriterWhatsapp _writer;
+        private readonly SmsProcessor _processor;
+        private readonly ExcelWriterSms _writer;
 
-        public WhatsappProcessService(
+        public SmsProcessService(
             FileScanner scanner,
-            WhatsappProcessor processor,
-            ExcelWriterWhatsapp writer)
+            SmsProcessor processor,
+            ExcelWriterSms writer)
         {
             _scanner = scanner;
             _processor = processor;
@@ -23,9 +23,9 @@ namespace AutomatizacionReportes.Services
 
         public async Task<ProcessResult> EjecutarAsync()
         {
-            var archivos = _scanner.ObtenerArchivosWhatsapp();
+            var archivos = _scanner.ObtenerArchivosSms();
             var resultados = _processor.Procesar(archivos);
-            var archivoSalida = _writer.GenerarExcelWhatsappHistorico(resultados);
+            var archivoSalida = _writer.GenerarExcelHistorico(resultados);
 
             return new ProcessResult
             {
