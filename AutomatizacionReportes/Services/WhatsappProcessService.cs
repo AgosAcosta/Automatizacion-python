@@ -23,17 +23,33 @@ namespace AutomatizacionReportes.Services
 
         public async Task<ProcessResult> EjecutarAsync()
         {
-            var archivos = _scanner.ObtenerArchivosWhatsapp();
-            var resultados = _processor.Procesar(archivos);
-            var archivoSalida = _writer.GenerarExcelWhatsappHistorico(resultados);
+            Log.Info("WHATSAPP - Inicio de ejecución");
 
-            return new ProcessResult
+            try
             {
-                Success = true,
-                Message = "Proceso ejecutado correctamente",
-                ArchivoGenerado = archivoSalida,
-                FechaEjecucion = DateTime.Now
-            };
+                var archivos = _scanner.ObtenerArchivosWhatsapp();
+                Log.Info($"WHATSAPP - Archivos encontrados: {archivos.Count}");
+
+                var resultados = _processor.Procesar(archivos);
+                var archivoSalida = _writer.GenerarExcelWhatsappHistorico(resultados);
+
+                return new ProcessResult
+                {
+                    Success = true,
+                    Message = "Proceso WHATSAPP ejecutado correctamente",
+                    ArchivoGenerado = archivoSalida,
+                    FechaEjecucion = DateTime.Now
+                };
+            }
+            catch (Exception ex)
+            {
+                Log.Error("WHATSAPP - Error durante la ejecución", ex);
+                throw;
+            }
+            finally
+            {
+                Log.Info("WHATSAPP - Fin de ejecución");
+            }
         }
     }
 }

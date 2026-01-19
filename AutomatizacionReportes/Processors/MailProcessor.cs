@@ -2,6 +2,7 @@
 using AutomatizacionReportes.Utils;
 using ClosedXML.Excel;
 using Microsoft.VisualBasic.FileIO;
+using NPOI.Util;
 using System.Data;
 
 namespace AutomatizacionReportes.Processors
@@ -23,17 +24,36 @@ namespace AutomatizacionReportes.Processors
 
                 DataTableUtils.NormalizarColumnas(tabla);
 
+                string? columnaCuit = tabla.Columns
+                .Cast<DataColumn>()
+                .Select(c => c.ColumnName.Trim().ToUpper())
+                .FirstOrDefault(c => c == "CUIT");
+
                 int total = tabla.Rows.Count;
-                int unicos = ConteoUtils.ContarUnicos(tabla);
+                int unicos;
+
+                if (columnaCuit != null)
+                {
+                    unicos = tabla.AsEnumerable()
+                    .Select(r => r[columnaCuit]?.ToString()?.Trim())
+                    .Where(v => !string.IsNullOrEmpty(v))
+                    .Distinct()
+                    .Count();
+                }
+                else
+                {
+                    unicos = total;
+                }
 
                 resultados.Add(new MailResultado
                 {
                     Fecha = fecha,
                     Banco = banco,
                     CantidadTotal = total,
-                    CantidadUnica = unicos
+                    CantidadUnica = unicos 
                 });
             }
+
 
             return resultados;
         }

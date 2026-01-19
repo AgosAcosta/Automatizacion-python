@@ -13,7 +13,7 @@ namespace AutomatizacionReportes.Processors
 
             foreach (var archivo in archivos)
             {
-                var banco = FileNameUtils.ObtenerBanco(archivo);
+                var banco = ObtenerBancoDesdeNombre(archivo);
                 var tabla = FileReader.LeerArchivo(archivo);
 
                 if (tabla == null || tabla.Rows.Count == 0)
@@ -36,5 +36,19 @@ namespace AutomatizacionReportes.Processors
             return resultados;
         }
 
+        //Metodo diferente que el resto: El nombre del archivo tiene la fecha y el nombre junto. El resto es con _
+        private static string ObtenerBancoDesdeNombre(string path)
+        {
+            var nombre = Path.GetFileNameWithoutExtension(path);
+
+            if (nombre.Length < 11)
+                return "N/D";
+
+            return nombre.Substring(8, 3).ToUpper();
+
+
+        }
+
     }
 }
+

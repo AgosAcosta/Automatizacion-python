@@ -23,17 +23,34 @@ namespace AutomatizacionReportes.Services
 
         public async Task<ProcessResult> EjecutarAsync()
         {
-            var archivos = _scanner.ObtenerArchivosSms();
-            var resultados = _processor.Procesar(archivos);
-            var archivoSalida = _writer.GenerarExcelHistorico(resultados);
+            Log.Info("SMS - Inicio de ejecución");
 
-            return new ProcessResult
+            try
             {
-                Success = true,
-                Message = "Proceso ejecutado correctamente",
-                ArchivoGenerado = archivoSalida,
-                FechaEjecucion = DateTime.Now
-            };
+                var archivos = _scanner.ObtenerArchivosSms();
+                Log.Info($"SMS - Archivos encontrados: {archivos.Count}");
+
+                var resultados = _processor.Procesar(archivos);
+                var archivoSalida = _writer.GenerarExcelHistorico(resultados);
+
+                return new ProcessResult
+                {
+                    Success = true,
+                    Message = "Proceso SMS ejecutado correctamente",
+                    ArchivoGenerado = archivoSalida,
+                    FechaEjecucion = DateTime.Now
+                };
+            }
+            catch (Exception ex)
+            {
+                Log.Error("SMS - Error durante la ejecución", ex);
+                throw;
+            }
+            finally
+            {
+                Log.Info("SMS - Fin de ejecución");
+            }
         }
+
     }
 }

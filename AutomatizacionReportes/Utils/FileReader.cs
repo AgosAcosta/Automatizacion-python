@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using AutomatizacionReportes.Infrastructure;
+using System.Data;
 
 namespace AutomatizacionReportes.Utils
 {
@@ -32,7 +33,10 @@ namespace AutomatizacionReportes.Utils
             }
             catch (Exception ex)
             {
+                Log.Error($"Error leyendo archivo {Path.GetFileName(path)}", ex);
+
                 throw new Exception($"Error leyendo archivo '{Path.GetFileName(path)}': {ex.Message}", ex);
+               
             }
         }
 
@@ -40,27 +44,33 @@ namespace AutomatizacionReportes.Utils
         {
             var table = new DataTable();
 
+            string delimiter = DetectarDelimitador(path);
+
             using var parser = new Microsoft.VisualBasic.FileIO.TextFieldParser(path);
             parser.TextFieldType = Microsoft.VisualBasic.FileIO.FieldType.Delimited;
-            parser.SetDelimiters(",", ";", "\t");
+            parser.SetDelimiters(delimiter);
             parser.HasFieldsEnclosedInQuotes = true;
+            parser.TrimWhiteSpace = true;
 
             if (!parser.EndOfData)
             {
                 var headers = parser.ReadFields();
-                if (headers != null)
-                    foreach (var h in headers)
-                        table.Columns.Add(h.Trim());
+                if (headers == null)
+                    return table;
+
+                foreach (var h in headers)
+                    table.Columns.Add(h.Trim());
             }
 
             while (!parser.EndOfData)
             {
                 var fields = parser.ReadFields();
-                if (fields == null) continue;
+                if (fields == null)
+                    continue;
 
                 var row = table.NewRow();
                 for (int i = 0; i < table.Columns.Count && i < fields.Length; i++)
-                    row[i] = fields[i];
+                    row[i] = fields[i]?.Trim();
 
                 table.Rows.Add(row);
             }
@@ -87,12 +97,45 @@ namespace AutomatizacionReportes.Utils
                 {
                     var dr = table.NewRow();
                     for (int i = 0; i < table.Columns.Count; i++)
-                        dr[i] = row.Cell(i + 1).GetValue<string>();
+                    {
+                        var cell = row.Cell(i + 1);
+
+                        if (cell.DataType == ClosedXML.Excel.XLDataType.Number)
+                        {
+                            dr[i] = cell.GetDouble().ToString("F0");
+                        }
+                        else
+                        {
+                            dr[i] = cell.GetValue<string>();
+                        }
+                    }
                     table.Rows.Add(dr);
+                   
                 }
             }
 
             return table;
+        }
+
+        private static string DetectarDelimitador(string path)
+        {
+            var line = File.ReadLines(path)
+                           .FirstOrDefault(l => !string.IsNullOrWhiteSpace(l));
+
+            if (line == null)
+                return ";"; 
+
+            int countSemicolon = line.Count(c => c == ';');
+            int countComma = line.Count(c => c == ',');
+            int countTab = line.Count(c => c == '\t');
+
+            if (countSemicolon >= countComma && countSemicolon >= countTab)
+                return ";";
+
+            if (countComma >= countTab)
+                return ",";
+
+            return "\t";
         }
     }
 }

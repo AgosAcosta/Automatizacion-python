@@ -15,8 +15,8 @@ namespace AutomatizacionReportes.Writers
 
         public string GenerarExcelHistorico(List<MailAsignacionResultado> nuevos)
         {
-            var final = Path.Combine(_outputPath, "Campañas_MAIL_ASIGNACION.xlsx");
-            var temp = Path.Combine(_outputPath, "Campañas_MAIL_ASIGNACION.tmp.xlsx");
+            var final = Path.Combine(_outputPath, "Campañas_Mail_Asignacion.xlsx");
+            var temp = Path.Combine(_outputPath, "Campañas_Mail_Asignacion.tmp.xlsx");
 
             var data = new List<MailAsignacionResultado>();
 

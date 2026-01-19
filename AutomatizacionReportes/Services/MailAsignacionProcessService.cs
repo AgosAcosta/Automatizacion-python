@@ -23,17 +23,33 @@ namespace AutomatizacionReportes.Services
 
         public Task<ProcessResult> EjecutarAsync()
         {
-            var archivos = _scanner.ObtenerArchivosMailAsignacion();
-            var resultados = _processor.Procesar(archivos);
-            var archivo = _writer.GenerarExcelHistorico(resultados);
+            Log.Info("MAIL ASIGNACIÓN - Inicio de ejecución");
 
-            return Task.FromResult(new ProcessResult
+            try
             {
-                Success = true,
-                Message = "Proceso MAIL ASIGNACIÓN ejecutado correctamente",
-                ArchivoGenerado = archivo,
-                FechaEjecucion = DateTime.Now
-            });
+                var archivos = _scanner.ObtenerArchivosMailAsignacion();
+                Log.Info($"MAIL ASIGNACIÓN - Archivos encontrados: {archivos.Count}");
+
+                var resultados = _processor.Procesar(archivos);
+                var archivo = _writer.GenerarExcelHistorico(resultados);
+
+                return Task.FromResult(new ProcessResult
+                {
+                    Success = true,
+                    Message = "Proceso MAIL ASIGNACIÓN ejecutado correctamente",
+                    ArchivoGenerado = archivo,
+                    FechaEjecucion = DateTime.Now
+                });
+            }
+            catch (Exception ex)
+            {
+                Log.Error("MAIL ASIGNACIÓN - Error durante la ejecución", ex);
+                throw;
+            }
+            finally
+            {
+                Log.Info("MAIL ASIGNACIÓN - Fin de ejecución");
+            }
         }
     }
 }

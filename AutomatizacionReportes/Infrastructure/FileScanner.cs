@@ -46,6 +46,8 @@
                 if (!Directory.Exists(path))
                     continue;
 
+                Log.Info($"Escaneando path: {path}");
+
                 foreach (var archivo in Directory.GetFiles(path))
                 {
                     var nombre = Path.GetFileName(archivo);
@@ -54,7 +56,10 @@
                         continue;
 
                     if (filtros.Any(f => nombre.Contains(f)))
+                    {
+                        Log.Info($"Archivo detectado: {nombre}");
                         resultado.Add(archivo);
+                    }
                 }
             }
 
